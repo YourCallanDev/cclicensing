@@ -1,9 +1,56 @@
 [
   {
-    "title": "PANTO1",
+    "title": "Granny Got Stuck In The TV",
+    "category": "Granny Series",
+    "cast": "17 total - 5 male, 6 female, 6 fluid",
+    "description": "On a chaotic Christmas Day, Granny is sucked into the television, prompting her grandchildren, Chris and Frankie, to dive in after her on a high-stakes rescue mission. As Granny uses a magical remote to hop through Strictly Come Dancing, Home Alone, and Wallace & Gromit, the children trail behind her through a series of iconic holiday scenes and mishaps. After a final showdown involving The Grinch and a trap set with Cindy Lou Who, Granny finally uses her remote to transport the trio back to their living room. They return to their bewildered parents just in time to celebrate, bonded by their secret, whirlwind adventure through the screen."
+  },
+  {
+    "title": "Wizard of Oz",
     "category": "Pantomime",
-    "cast": "15-25",
-    "description": "A magical pantomime full of laughs and sparkle.",
-    "logo": "/assets/CCL.logo.jpg"
+    "cast": "14 roles - 4 male, 4 female, 6 gender fluid + ensemble",
+    "description": "After a twister transports Dorothy, Auntie Em, and Toto from Drumchapel to Oz, they set off down the Yellow Brick Road to seek help from the Wizard. Along the way, they unite with a Scarecrow, Tin Man, and Cowardly Lion, all while being hunted by the Wicked Witch of the West for her sister's Ruby Slippers. The group eventually defeats the Witch by melting her with water and discovers the Wizard is a fraud, though he still manages to grant the companions their wishes. Finally, Glinda reveals that Dorothy has always had the power to return home; with three clicks of her heels, the family is transported back to Drumchapel."
+  },
+  {
+    "title": "Snow White & The Magnificent Eight",
+    "category": "Pantomime",
+    "cast": "12 total - 1 dame, 1 female, 2 male, 9+ gender fluid",
+    "description": "In this musical pantomime, the jealous Queen Evilyn plots to eliminate Snow White after her magic mirror names the princess the fairest in the land. Snow White flees to the forest, where she is protected by the Magnificent Eight and her friend Muddles, eventually falling in love with Prince Sebastian. The Queen tricks Snow White into a deep sleep with a poisoned apple, but the spell is broken by true love's kiss. After a comedic showdown, the Queen is banished and the cast celebrates their happily ever after."
+  },
+  {
+    "title": "Granny Got Stuck In Alexa",
+    "category": "Granny Series",
+    "cast": "13 total - 2 male, 6 female, 5 fluid",
+    "description": "In this musical sequel, Granny's holiday takes a digital turn when she is sucked into an Alexa while trying to play Christmas music. Chris and Frankie are sent into the device to bring her home. Granny travels through a virtual concert featuring Dolly Parton, Jose Feliciano, Mariah Carey, and Michael Bublé. After hearing a heartfelt message from her family, Granny finds the exit and returns home for a high-tech happily ever after."
+  },
+  {
+    "title": "Lemonade : The Comedy ",
+    "category": "Plays",
+    "cast": "3 total - 2 male, 1 female",
+    "description": "On a blazing summer afternoon, two long-time friends — June and Mara — attempt to unwind and untangle their chaotic lives over lemonade in the park. Joined briefly by their friend Caleb, the trio explores friendship, dating burnout, and life in their late twenties. A witty, warm 10-minute comedy about showing up — even when you'd rather scroll away."
+  },
+  {
+    "title": "All Hail The Christmas Tres",
+    "category": "Seasonal Series",
+    "cast": "10 total - 5 male, 5 female",
+    "description": "Determined to find the perfect Christmas tree, Sara leads her friends on a snowy adventure to find a legendary evergreen. After a series of humorous challenges, they discover that perfection isn't what matters most. They return home to decorate their old tree, realizing that friendship is what truly makes the holiday special."
+  },
+  {
+    "title": "The Harvest Festival Fiasco",
+    "category": "Seasonal Series",
+    "cast": "10 total - 5 male, 5 female",
+    "description": "A group of friends enters a Harvest Festival competition, but their different ideas of perfection cause chaos. As they clash over pumpkins, hay bales, and displays, they learn to work together and embrace imperfection."
+  },
+  {
+    "title": "Beach Bash Blues",
+    "category": "Seasonal Series",
+    "cast": "10 total - 5 male, 5 female",
+    "description": "A beach day turns chaotic when everything goes wrong — from storms to forgotten items. Through mishaps and laughter, the group learns to enjoy the moment rather than chase perfection."
+  },
+  {
+    "title": "The Great Garden Race",
+    "category": "Seasonal Series",
+    "cast": "10 total - 5 male, 5 female",
+    "description": "A group enters a garden competition but struggles with conflicting ideas of perfection. Through arguments and compromise, they discover the beauty of collaboration."
   }
 ]
