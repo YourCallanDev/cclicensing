@@ -19,7 +19,22 @@
 </ul>
 </nav>
 
-<input id="search" placeholder="Search shows..." style="margin:20px; padding:10px; width:80%">
+<section class="shows-hero">
+  <h1>Our Shows</h1>
+  <p>Browse our full catalogue and find the perfect production for your group.</p>
+</section>
+
+<div class="shows-controls">
+  <input id="search" placeholder="Search shows...">
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="Granny Series">Granny Series</button>
+    <button class="filter-btn" data-category="Pantomime">Pantomime</button>
+    <button class="filter-btn" data-category="Plays">Plays</button>
+    <button class="filter-btn" data-category="Seasonal Series">Seasonal Series</button>
+  </div>
+</div>
+
 <div id="shows-container" class="grid"></div>
 
 <script src="../js/script.js"></script>

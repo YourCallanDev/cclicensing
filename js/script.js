@@ -3,30 +3,52 @@ async function loadShows() {
     const shows = await res.json();
     const container = document.getElementById('shows-container');
     const search = document.getElementById('search');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    let activeCategory = 'all';
 
     function display(list) {
         container.innerHTML = '';
+        if (list.length === 0) {
+            container.innerHTML = '<p style="padding:20px 0;color:#aaa;">No shows match your search.</p>';
+            return;
+        }
         list.forEach(show => {
             container.innerHTML += `
             <div class="card">
-                <img src="${show.logo}" style="width:100%">
                 <h3>${show.title}</h3>
-                <p>${show.category}</p>
-                <p>Cast: ${show.cast}</p>
+                <p class="card-category">${show.category}</p>
+                <p><strong>Cast:</strong> ${show.cast}</p>
                 <p>${show.description}</p>
                 <a class="btn" href="../contact/?show=${encodeURIComponent(show.title)}">Enquire</a>
             </div>`;
         });
     }
 
+    function applyFilters() {
+        const val = search ? search.value.toLowerCase() : '';
+        const filtered = shows.filter(s => {
+            const matchesSearch = s.title.toLowerCase().includes(val) || s.description.toLowerCase().includes(val);
+            const matchesCategory = activeCategory === 'all' || s.category === activeCategory;
+            return matchesSearch && matchesCategory;
+        });
+        display(filtered);
+    }
+
     display(shows);
 
     if (search) {
-        search.addEventListener('input', () => {
-            const val = search.value.toLowerCase();
-            display(shows.filter(s => s.title.toLowerCase().includes(val)));
-        });
+        search.addEventListener('input', applyFilters);
     }
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeCategory = btn.dataset.category;
+            applyFilters();
+        });
+    });
 }
 
 function autofill() {
