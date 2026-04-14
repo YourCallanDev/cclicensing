@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<nav>
+<img src="../assets/CCL.logo.jpeg">
+
+<ul>
+<li><a href="../home/">Home</a></li>
+<li><a href="../about/">About</a></li>
+<li><a href="../shows/">Shows</a></li>
+<li><a href="../team/">Team</a></li>
+<li><a href="../contact/">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Enquire About a Show</h1>
+<p>Fill out the form below and we’ll get back to you.</p>
+</section>
+
+<form action="https://formspree.io/f/mqegrznz" method="POST" style="padding:40px 10%">
+
+<input type="text" id="showInput" name="Show Name" placeholder="Show Name">
+
+<input type="text" name="Full Name" placeholder="Full Name" required>
+
+<input type="email" name="Email" placeholder="Email" required>
+
+<input type="text" name="Contact Number" placeholder="Contact Number">
+
+<input type="date" name="Show Start Date">
+<input type="date" name="Show End Date">
+
+<input type="text" name="Group Name" placeholder="Group Name">
+<input type="text" name="Show Location" placeholder="Show Location">
+
+<textarea name="Notes" placeholder="Additional Notes"></textarea>
+
+<button class="btn" type="submit">Send Enquiry</button>
+
+</form>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
