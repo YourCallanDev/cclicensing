@@ -4,6 +4,90 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/styles.css">
 <title>Home</title>
+
+<style>
+/* ================= SUBTLE MOTION ================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeUp 0.7s ease both;
+}
+
+/* card hover animation */
+.card {
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* hero glow */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: rgba(255,140,66,0.22);
+    filter: blur(120px);
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+
+/* stats */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 60px 10%;
+    background: rgba(255,255,255,0.03);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.stats h3 {
+    font-size: 2rem;
+    color: #f5b841;
+    margin-bottom: 5px;
+}
+
+/* pricing */
+.pricing {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.pricing-box {
+    display: inline-block;
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+</style>
+
 </head>
 
 <body>
@@ -19,11 +103,102 @@
 </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-<h1>License Your Next Production</h1>
-<p>Professional, flexible licensing for theatre groups.</p>
+<h1>License Bold, Modern Theatre</h1>
+<p>Professional scripts and flexible performance rights for schools, youth groups, and theatres.</p>
 <a href="../shows/" class="btn">View Shows</a>
 <a href="../contact/" class="btn">Enquire</a>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+<div>
+<h3>9+</h3>
+<p>Original Shows</p>
+</div>
+<div>
+<h3>From £20</h3>
+<p>Per Show Licensing</p>
+</div>
+<div>
+<h3>Costume Hire</h3>
+<p>Available on Select Shows</p>
+</div>
+</section>
+
+<!-- FEATURED SHOWS -->
+<section>
+<h2 style="text-align:center;">Featured Shows</h2>
+
+<div class="grid">
+
+<!-- GRANNY -->
+<div class="card">
+<div class="card-category">Granny Series</div>
+<h3>Granny Got Stuck In The TV</h3>
+<p>Granny is sucked into the TV on Christmas Day, forcing Chris and Frankie into a chaotic rescue through iconic holiday worlds.</p>
+<a href="../shows/" class="btn">View Show</a>
+</div>
+
+<!-- PANTO -->
+<div class="card">
+<div class="card-category">Pantomime</div>
+<h3>Wizard of Oz</h3>
+<p>Drumchapel meets Oz in a magical pantomime adventure filled with friends, witches, and a twist ending at home.</p>
+<a href="../shows/" class="btn">View Show</a>
+</div>
+
+<!-- SEASONAL -->
+<div class="card">
+<div class="card-category">Seasonal Series</div>
+<h3>The Harvest Festival Fiasco</h3>
+<p>A chaotic festival competition teaches a group of friends that teamwork matters more than perfection.</p>
+<a href="../shows/" class="btn">View Show</a>
+</div>
+
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section>
+<h2 style="text-align:center;">Why Choose CurtainCall Licensing?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Simple Licensing</h3>
+<p>Clear, flexible rights for schools and theatre groups.</p>
+</div>
+
+<div class="card">
+<h3>Modern Shows</h3>
+<p>Fresh writing designed for youth & community theatre.</p>
+</div>
+
+<div class="card">
+<h3>Fast Enquiries</h3>
+<p>Quick responses with tailored licensing options.</p>
+</div>
+
+<div class="card">
+<h3>Costume Hire Available</h3>
+<p>Optional costume packages available with selected productions.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+<h2>Licensing Pricing</h2>
+
+<div class="pricing-box">
+<h3>From £20 per show</h3>
+<p>Affordable licensing for schools, youth groups, and theatres.</p>
+<p>Custom pricing available for larger productions.</p>
+<a href="../contact/" class="btn">Get a Quote</a>
+</div>
 </section>
 
 </body>
