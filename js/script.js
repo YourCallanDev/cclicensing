@@ -7,22 +7,49 @@ async function loadShows() {
 
     let activeCategory = 'all';
 
+    function createCard(show) {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const title = document.createElement('h3');
+        title.textContent = show.title;
+
+        const category = document.createElement('p');
+        category.className = 'card-category';
+        category.textContent = show.category;
+
+        const cast = document.createElement('p');
+        const castLabel = document.createElement('strong');
+        castLabel.textContent = 'Cast: ';
+        cast.appendChild(castLabel);
+        cast.appendChild(document.createTextNode(show.cast));
+
+        const description = document.createElement('p');
+        description.textContent = show.description;
+
+        const link = document.createElement('a');
+        link.className = 'btn';
+        link.href = `../contact/?show=${encodeURIComponent(show.title)}`;
+        link.textContent = 'Enquire';
+
+        card.appendChild(title);
+        card.appendChild(category);
+        card.appendChild(cast);
+        card.appendChild(description);
+        card.appendChild(link);
+        return card;
+    }
+
     function display(list) {
         container.innerHTML = '';
         if (list.length === 0) {
-            container.innerHTML = '<p style="padding:20px 0;color:#aaa;">No shows match your search.</p>';
+            const msg = document.createElement('p');
+            msg.className = 'empty-state';
+            msg.textContent = 'No shows match your search.';
+            container.appendChild(msg);
             return;
         }
-        list.forEach(show => {
-            container.innerHTML += `
-            <div class="card">
-                <h3>${show.title}</h3>
-                <p class="card-category">${show.category}</p>
-                <p><strong>Cast:</strong> ${show.cast}</p>
-                <p>${show.description}</p>
-                <a class="btn" href="../contact/?show=${encodeURIComponent(show.title)}">Enquire</a>
-            </div>`;
-        });
+        list.forEach(show => container.appendChild(createCard(show)));
     }
 
     function applyFilters() {
