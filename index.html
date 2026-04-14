@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=../home/">
 <title>Redirecting...</title>
+
+<script>
+  // Redirect to /home/ inside the repo (keeps /cclicensing/)
+  window.location.href = window.location.pathname.replace(/\/$/, '') + '/home/';
+</script>
+
 </head>
+
 <body>
-<p>Redirecting to <a href="../home/">Home</a>...</p>
+<p>Redirecting to <a href="./home/">Home</a>...</p>
 </body>
 </html>
